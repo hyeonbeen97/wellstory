@@ -3,9 +3,9 @@ import "../../assets/sass/Section2.scss";
 
 const section2 = () => {
   const sectionRef = useRef<HTMLElement>(null);
-  const leftRef = useRef<HTMLElement>(null);
-  const righttopRef = useRef<HTMLElement>(null);
-  const rightbottomRef = useRef<HTMLElement>(null);
+  const leftRef = useRef<HTMLDivElement>(null);
+  const righttopRef = useRef<HTMLDivElement>(null);
+  const rightbottomRef = useRef<HTMLDivElement>(null);
 
   const [count1, setcount1] = useState(0);
   const [count2, setcount2] = useState(0);

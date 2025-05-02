@@ -1,0 +1,65 @@
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+.section2 .left {
+  width: 47%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease;
+}
+.section2 .left.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.section2 .left h1 {
+  font-size: 5rem;
+  color: #333;
+}
+.section2 .right {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section2 .right .top,
+.section2 .right .bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease;
+}
+.section2 .right .top.active,
+.section2 .right .bottom.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.section2 .right .top h3,
+.section2 .right .bottom h3 {
+  font-size: 1.5rem;
+  color: #555;
+  text-align: right;
+}
+.section2 .right .top h4,
+.section2 .right .bottom h4 {
+  font-size: 1rem;
+  color: #555;
+  text-align: right;
+}
+.section2 .right .bottom {
+  display: flex;
+  gap: 30px;
+  justify-content: right;
+  align-items: center;
+}
+.section2 .right .bottom span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.section2 .right .bottom span span {
+  font-size: 3.5rem;
+  color: orangered;
+}/*# sourceMappingURL=Section2.css.map */
